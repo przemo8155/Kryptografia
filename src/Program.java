@@ -32,7 +32,7 @@ public class Program {
 		 * n=67159 d=50131 e=331
 		 */
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("src\\dane.txt"));
+			BufferedReader br = new BufferedReader(new FileReader("src//dane.txt"));
 			String line = br.readLine();
 			while (line != null) {
 				String[] tokens = line.split("=");
@@ -92,6 +92,8 @@ public class Program {
 			System.out.println("Wylosowane a: " + a);
 
 			System.out.println("Wyliczone d: " + nwd);
+			
+			System.out.println("b: " + b.toString());
 
 			/*
 			 * Obliczanie rekurencyjne ciągu
@@ -163,7 +165,7 @@ public class Program {
 		 */
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("src\\liczby_pierwsze.txt"));
+			BufferedReader br = new BufferedReader(new FileReader("src//liczby_pierwsze.txt"));
 			String line = br.readLine();
 			while (line != null) {
 				String[] words = line.split("\\s+");
